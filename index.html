@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ngekos Yuk</title>
+    <!-- Menggunakan Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+    <!-- Navbar -->
+    <header class="bg-white border-b border-gray-100 shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="text-xl font-extrabold text-sky-600 tracking-tight">Ngekos Yuk</div>
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-600">
+                <a href="#" class="text-sky-600 font-semibold hover:text-sky-700">Beranda</a>
+                <a href="#cari-kamar" class="hover:text-sky-600 transition">Cari Kamar</a>
+                <!-- Tautan Masuk diarahkan ke login.html -->
+                <a href="login.html" class="bg-sky-500 text-white px-5 py-2 rounded-xl hover:bg-sky-600 shadow-sm transition">Masuk</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="max-w-7xl mx-auto px-6 pb-16 pt-6">
+        
+        <!-- Hero Section -->
+        <section class="relative rounded-3xl overflow-hidden shadow-sm bg-gray-900 text-white min-h-[480px] flex items-center">
+            <!-- Background Image dengan Overlay -->
+            <div class="absolute inset-0 z-0">
+                <img src="images/kos-depan.jpeg" alt="Gedung Kos" class="w-full h-full object-cover opacity-60">
+                <!-- Gradient agar teks terbaca jelas di sebelah kiri -->
+                <div class="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent"></div>
+            </div>
+
+            <!-- Hero Content -->
+            <div class="relative z-10 max-w-xl p-8 md:p-14 text-gray-900">
+                <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight leading-tight mb-4 text-gray-900">
+                    Kos nyaman untuk mahasiswa, tinggal pesan.
+                </h1>
+                <p class="text-sm md:text-base text-gray-600 mb-6 leading-relaxed">
+                    Ngekos Yuk menyediakan kamar bersih dengan harga bersahabat. Lihat kamar yang tersedia dan pesan tanpa perlu membuat akun.
+                </p>
+
+                <!-- Badges / Fitur -->
+                <div class="flex flex-wrap gap-2 mb-8">
+                    <span class="bg-pink-100 text-pink-700 text-xs font-semibold px-3.5 py-1.5 rounded-full">Dekat kampus</span>
+                    <span class="bg-pink-100 text-pink-700 text-xs font-semibold px-3.5 py-1.5 rounded-full">Wi-Fi gratis</span>
+                    <span class="bg-pink-100 text-pink-700 text-xs font-semibold px-3.5 py-1.5 rounded-full">Aman 24 jam</span>
+                </div>
+
+                <!-- CTA Button -->
+                <a href="#cari-kamar" class="inline-block bg-sky-500 hover:bg-sky-600 text-white font-medium text-sm px-6 py-3 rounded-xl shadow transition">
+                    Lihat Kamar
+                </a>
+            </div>
+        </section>
+
+        <!-- Section Cari Kamar -->
+        <section id="cari-kamar" class="mt-14">
+            <div class="flex flex-col md:flex-row md:items-center justify-between mb-8 gap-4">
+                <h2 class="text-2xl font-bold text-gray-900">Cari Kamar</h2>
+                
+                <!-- Filter Dropdown -->
+                <div class="w-full md:w-48">
+                    <select class="w-full bg-white border border-gray-200 text-gray-700 text-sm rounded-xl px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-sky-500 shadow-sm">
+                        <option>Semua kamar</option>
+                        <option>Tersedia</option>
+                        <option>Terisi</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Grid Kartu Kamar -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <!-- Kamar A01 -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm">
+                    <div class="relative h-48 bg-gray-200">
+                        <img src="images/room-a.jpeg" alt="Kamar A01" class="w-full h-full object-cover">
+                        <span class="absolute top-3 right-3 bg-red-100 text-red-700 text-xs font-semibold px-2.5 py-1 rounded-full shadow-sm">Terisi</span>
+                    </div>
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-1">
+                            <h3 class="font-bold text-gray-900 text-lg">Kamar A01</h3>
+                            <span class="text-xs text-gray-500">Lantai 1</span>
+                        </div>
+                        <div class="flex flex-wrap gap-1.5 mb-4">
+                            <span class="bg-purple-50 text-purple-700 text-[11px] px-2 py-0.5 rounded">Kasur</span>
+                            <span class="bg-purple-50 text-purple-700 text-[11px] px-2 py-0.5 rounded">Lemari</span>
+                            <span class="bg-purple-50 text-purple-700 text-[11px] px-2 py-0.5 rounded">Kamar mandi dalam</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="text-sky-600 font-semibold text-sm">Rp 1.000.000 <span class="text-gray-500 text-xs font-normal">/ bulan</span></div>
+                            <button class="border border-gray-200 hover:border-sky-500 text-gray-700 hover:text-sky-600 text-xs font-medium px-3.5 py-2 rounded-xl transition">Lihat Detail</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kamar A02 -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm">
+                    <div class="relative h-48 bg-gray-200">
+                        <img src="images/room-a.jpeg" alt="Kamar A02" class="w-full h-full object-cover">
+                        <span class="absolute top-3 right-3 bg-red-100 text-red-700 text-xs font-semibold px-2.5 py-1 rounded-full shadow-sm">Terisi</span>
+                    </div>
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-1">
+                            <h3 class="font-bold text-gray-900 text-lg">Kamar A02</h3>
+                            <span class="text-xs text-gray-500">Lantai 1</span>
+                        </div>
+                        <div class="flex flex-wrap gap-1.5 mb-4">
+                            <span class="bg-purple-50 text-purple-700 text-[11px] px-2 py-0.5 rounded">Kasur</span>
+                            <span class="bg-purple-50 text-purple-700 text-[11px] px-2 py-0.5 rounded">Lemari</span>
+                            <span class="bg-purple-50 text-purple-700 text-[11px] px-2 py-0.5 rounded">Kamar mandi dalam</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="text-sky-600 font-semibold text-sm">Rp 1.000.000 <span class="text-gray-500 text-xs font-normal">/ bulan</span></div>
+                            <button class="border border-gray-200 hover:border-sky-500 text-gray-700 hover:text-sky-600 text-xs font-medium px-3.5 py-2 rounded-xl transition">Lihat Detail</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kamar A03 -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm">
+                    <div class="relative h-48 bg-gray-200">
+                        <img src="images/room-a.jpeg" alt="Kamar A03" class="w-full h-full object-cover">
+                        <span class="absolute top-3 right-3 bg-emerald-100 text-emerald-700 text-xs font-semibold px-2.5 py-1 rounded-full shadow-sm">Tersedia</span>
+                    </div>
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-1">
+                            <h3 class="font-bold text-gray-900 text-lg">Kamar A03</h3>
+                            <span class="text-xs text-gray-500">Lantai 1</span>
+                        </div>
+                        <div class="flex flex-wrap gap-1.5 mb-4">
+                            <span class="bg-purple-50 text-purple-700 text-[11px] px-2 py-0.5 rounded">Kasur</span>
+                            <span class="bg-purple-50 text-purple-700 text-[11px] px-2 py-0.5 rounded">Lemari</span>
+                            <span class="bg-purple-50 text-purple-700 text-[11px] px-2 py-0.5 rounded">Kamar mandi dalam</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="text-sky-600 font-semibold text-sm">Rp 1.000.000 <span class="text-gray-500 text-xs font-normal">/ bulan</span></div>
+                            <button class="border border-gray-200 hover:border-sky-500 text-gray-700 hover:text-sky-600 text-xs font-medium px-3.5 py-2 rounded-xl transition">Lihat Detail</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kamar A04 -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm">
+                    <div class="relative h-48 bg-gray-200">
+                        <img src="images/room-a.jpeg" alt="Kamar A04" class="w-full h-full object-cover">
+                        <span class="absolute top-3 right-3 bg-emerald-100 text-emerald-700 text-xs font-semibold px-2.5 py-1 rounded-full shadow-sm">Tersedia</span>
+                    </div>
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-1">
+                            <h3 class="font-bold text-gray-900 text-lg">Kamar A04</h3>
+                            <span class="text-xs text-gray-500">Lantai 1</span>
+                        </div>
+                        <div class="flex flex-wrap gap-1.5 mb-4">
+                            <span class="bg-purple-50 text-purple-700 text-[11px] px-2 py-0.5 rounded">Kasur</span>
+                            <span class="bg-purple-50 text-purple-700 text-[11px] px-2 py-0.5 rounded">Lemari</span>
+                            <span class="bg-purple-50 text-purple-700 text-[11px] px-2 py-0.5 rounded">Kamar mandi dalam</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="text-sky-600 font-semibold text-sm">Rp 1.000.000 <span class="text-gray-500 text-xs font-normal">/ bulan</span></div>
+                            <button class="border border-gray-200 hover:border-sky-500 text-gray-700 hover:text-sky-600 text-xs font-medium px-3.5 py-2 rounded-xl transition">Lihat Detail</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kamar A05 -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm">
+                    <div class="relative h-48 bg-gray-200">
+                        <img src="images/room-a.jpeg" alt="Kamar A05" class="w-full h-full object-cover">
+                        <span class="absolute top-3 right-3 bg-amber-100 text-amber-700 text-xs font-semibold px-2.5 py-1 rounded-full shadow-sm">Dalam Perbaikan</span>
+                    </div>
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-1">
+                            <h3 class="font-bold text-gray-900 text-lg">Kamar A05</h3>
+                            <span class="text-xs text-gray-500">Lantai 1</span>
+                        </div>
+                        <div class="flex flex-wrap gap-1.5 mb-4">
+                            <span class="bg-purple-50 text-purple-700 text-[11px] px-2 py-0.5 rounded">Kasur</span>
+                            <span class="bg-purple-50 text-purple-700 text-[11px] px-2 py-0.5 rounded">Lemari</span>
+                            <span class="bg-purple-50 text-purple-700 text-[11px] px-2 py-0.5 rounded">Kamar mandi dalam</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="text-sky-600 font-semibold text-sm">Rp 1.000.000 <span class="text-gray-500 text-xs font-normal">/ bulan</span></div>
+                            <button class="border border-gray-200 hover:border-sky-500 text-gray-700 hover:text-sky-600 text-xs font-medium px-3.5 py-2 rounded-xl transition">Lihat Detail</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kamar A06 -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm">
+                    <div class="relative h-48 bg-gray-200">
+                        <img src="images/room-a.jpeg" alt="Kamar A06" class="w-full h-full object-cover">
+                        <span class="absolute top-3 right-3 bg-emerald-100 text-emerald-700 text-xs font-semibold px-2.5 py-1 rounded-full shadow-sm">Tersedia</span>
+                    </div>
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-1">
+                            <h3 class="font-bold text-gray-900 text-lg">Kamar A06</h3>
+                            <span class="text-xs text-gray-500">Lantai 1</span>
+                        </div>
+                        <div class="flex flex-wrap gap-1.5 mb-4">
+                            <span class="bg-purple-50 text-purple-700 text-[11px] px-2 py-0.5 rounded">Kasur</span>
+                            <span class="bg-purple-50 text-purple-700 text-[11px] px-2 py-0.5 rounded">Lemari</span>
+                            <span class="bg-purple-50 text-purple-700 text-[11px] px-2 py-0.5 rounded">Kamar mandi dalam</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="text-sky-600 font-semibold text-sm">Rp 1.000.000 <span class="text-gray-500 text-xs font-normal">/ bulan</span></div>
+                            <button class="border border-gray-200 hover:border-sky-500 text-gray-700 hover:text-sky-600 text-xs font-medium px-3.5 py-2 rounded-xl transition">Lihat Detail</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kamar B01 -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm">
+                    <div class="relative h-48 bg-gray-200">
+                        <img src="images/room-b.jpeg" alt="Kamar B01" class="w-full h-full object-cover">
+                        <span class="absolute top-3 right-3 bg-emerald-100 text-emerald-700 text-xs font-semibold px-2.5 py-1 rounded-full shadow-sm">Tersedia</span>
+                    </div>
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-1">
+                            <h3 class="font-bold text-gray-900 text-lg">Kamar B01</h3>
+                            <span class="text-xs text-gray-500">Lantai 2</span>
+                        </div>
+                        <div class="flex flex-wrap gap-1.5 mb-4">
+                            <span class="bg-purple-50 text-purple-700 text-[11px] px-2 py-0.5 rounded">Kasur</span>
+                            <span class="bg-purple-50 text-purple-700 text-[11px] px-2 py-0.5 rounded">Lemari</span>
+                            <span class="bg-purple-50 text-purple-700 text-[11px] px-2 py-0.5 rounded">Meja belajar</span>
+                            <span class="bg-purple-50 text-purple-700 text-[11px] px-2 py-0.5 rounded">Kulkas</span>
+                            <span class="bg-purple-50 text-purple-700 text-[11px] px-2 py-0.5 rounded">Kamar mandi dalam</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="text-sky-600 font-semibold text-sm">Rp 2.000.000 <span class="text-gray-500 text-xs font-normal">/ bulan</span></div>
+                            <button class="border border-gray-200 hover:border-sky-500 text-gray-700 hover:text-sky-600 text-xs font-medium px-3.5 py-2 rounded-xl transition">Lihat Detail</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kamar B02 -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm">
+                    <div class="relative h-48 bg-gray-200">
+                        <img src="images/room-b.jpeg" alt="Kamar B02" class="w-full h-full object-cover">
+                        <span class="absolute top-3 right-3 bg-emerald-100 text-emerald-700 text-xs font-semibold px-2.5 py-1 rounded-full shadow-sm">Tersedia</span>
+                    </div>
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-1">
+                            <h3 class="font-bold text-gray-900 text-lg">Kamar B02</h3>
+                            <span class="text-xs text-gray-500">Lantai 2</span>
+                        </div>
+                        <div class="flex flex-wrap gap-1.5 mb-4">
+                            <span class="bg-purple-50 text-purple-700 text-[11px] px-2 py-0.5 rounded">Kasur</span>
+                            <span class="bg-purple-50 text-purple-700 text-[11px] px-2 py-0.5 rounded">Lemari</span>
+                            <span class="bg-purple-50 text-purple-700 text-[11px] px-2 py-0.5 rounded">Meja belajar</span>
+                            <span class="bg-purple-50 text-purple-700 text-[11px] px-2 py-0.5 rounded">Kulkas</span>
+                            <span class="bg-purple-50 text-purple-700 text-[11px] px-2 py-0.5 rounded">Kamar mandi dalam</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="text-sky-600 font-semibold text-sm">Rp 2.000.000 <span class="text-gray-500 text-xs font-normal">/ bulan</span></div>
+                            <button class="border border-gray-200 hover:border-sky-500 text-gray-700 hover:text-sky-600 text-xs font-medium px-3.5 py-2 rounded-xl transition">Lihat Detail</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kamar B03 -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm">
+                    <div class="relative h-48 bg-gray-200">
+                        <img src="images/room-b.jpeg" alt="Kamar B03" class="w-full h-full object-cover">
+                        <span class="absolute top-3 right-3 bg-amber-100 text-amber-700 text-xs font-semibold px-2.5 py-1 rounded-full shadow-sm">Dalam Perbaikan</span>
+                    </div>
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-1">
+                            <h3 class="font-bold text-gray-900 text-lg">Kamar B03</h3>
+                            <span class="text-xs text-gray-500">Lantai 2</span>
+                        </div>
+                        <div class="flex flex-wrap gap-1.5 mb-4">
+                            <span class="bg-purple-50 text-purple-700 text-[11px] px-2 py-0.5 rounded">Kasur</span>
+                            <span class="bg-purple-50 text-purple-700 text-[11px] px-2 py-0.5 rounded">Lemari</span>
+                            <span class="bg-purple-50 text-purple-700 text-[11px] px-2 py-0.5 rounded">Meja belajar</span>
+                            <span class="bg-purple-50 text-purple-700 text-[11px] px-2 py-0.5 rounded">Kulkas</span>
+                            <span class="bg-purple-50 text-purple-700 text-[11px] px-2 py-0.5 rounded">Kamar mandi dalam</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="text-sky-600 font-semibold text-sm">Rp 2.000.000 <span class="text-gray-500 text-xs font-normal">/ bulan</span></div>
+                            <button class="border border-gray-200 hover:border-sky-500 text-gray-700 hover:text-sky-600 text-xs font-medium px-3.5 py-2 rounded-xl transition">Lihat Detail</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kamar B04 -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm">
+                    <div class="relative h-48 bg-gray-200">
+                        <img src="images/room-b.jpeg" alt="Kamar B04" class="w-full h-full object-cover">
+                        <span class="absolute top-3 right-3 bg-emerald-100 text-emerald-700 text-xs font-semibold px-2.5 py-1 rounded-full shadow-sm">Tersedia</span>
+                    </div>
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-1">
+                            <h3 class="font-bold text-gray-900 text-lg">Kamar B04</h3>
+                            <span class="text-xs text-gray-500">Lantai 2</span>
+                        </div>
+                        <div class="flex flex-wrap gap-1.5 mb-4">
+                            <span class="bg-purple-50 text-purple-700 text-[11px] px-2 py-0.5 rounded">Kasur</span>
+                            <span class="bg-purple-50 text-purple-700 text-[11px] px-2 py-0.5 rounded">Lemari</span>
+                            <span class="bg-purple-50 text-purple-700 text-[11px] px-2 py-0.5 rounded">Meja belajar</span>
+                            <span class="bg-purple-50 text-purple-700 text-[11px] px-2 py-0.5 rounded">Kulkas</span>
+                            <span class="bg-purple-50 text-purple-700 text-[11px] px-2 py-0.5 rounded">Kamar mandi dalam</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="text-sky-600 font-semibold text-sm">Rp 2.000.000 <span class="text-gray-500 text-xs font-normal">/ bulan</span></div>
+                            <button class="border border-gray-200 hover:border-sky-500 text-gray-700 hover:text-sky-600 text-xs font-medium px-3.5 py-2 rounded-xl transition">Lihat Detail</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kamar B05 -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm">
+                    <div class="relative h-48 bg-gray-200">
+                        <img src="images/room-b.jpeg" alt="Kamar B05" class="w-full h-full object-cover">
+                        <span class="absolute top-3 right-3 bg-emerald-100 text-emerald-700 text-xs font-semibold px-2.5 py-1 rounded-full shadow-sm">Tersedia</span>
+                    </div>
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-1">
+                            <h3 class="font-bold text-gray-900 text-lg">Kamar B05</h3>
+                            <span class="text-xs text-gray-500">Lantai 2</span>
+                        </div>
+                        <div class="flex flex-wrap gap-1.5 mb-4">
+                            <span class="bg-purple-50 text-purple-700 text-[11px] px-2 py-0.5 rounded">Kasur</span>
+                            <span class="bg-purple-50 text-purple-700 text-[11px] px-2 py-0.5 rounded">Lemari</span>
+                            <span class="bg-purple-50 text-purple-700 text-[11px] px-2 py-0.5 rounded">Meja belajar</span>
+                            <span class="bg-purple-50 text-purple-700 text-[11px] px-2 py-0.5 rounded">Kulkas</span>
+                            <span class="bg-purple-50 text-purple-700 text-[11px] px-2 py-0.5 rounded">Kamar mandi dalam</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="text-sky-600 font-semibold text-sm">Rp 2.000.000 <span class="text-gray-500 text-xs font-normal">/ bulan</span></div>
+                            <button class="border border-gray-200 hover:border-sky-500 text-gray-700 hover:text-sky-600 text-xs font-medium px-3.5 py-2 rounded-xl transition">Lihat Detail</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kamar B06 -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm">
+                    <div class="relative h-48 bg-gray-200">
+                        <img src="images/room-b.jpeg" alt="Kamar B06" class="w-full h-full object-cover">
+                        <span class="absolute top-3 right-3 bg-emerald-100 text-emerald-700 text-xs font-semibold px-2.5 py-1 rounded-full shadow-sm">Tersedia</span>
+                    </div>
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-1">
+                            <h3 class="font-bold text-gray-900 text-lg">Kamar B06</h3>
+                            <span class="text-xs text-gray-500">Lantai 2</span>
+                        </div>
+                        <div class="flex flex-wrap gap-1.5 mb-4">
+                            <span class="bg-purple-50 text-purple-700 text-[11px] px-2 py-0.5 rounded">Kasur</span>
+                            <span class="bg-purple-50 text-purple-700 text-[11px] px-2 py-0.5 rounded">Lemari</span>
+                            <span class="bg-purple-50 text-purple-700 text-[11px] px-2 py-0.5 rounded">Meja belajar</span>
+                            <span class="bg-purple-50 text-purple-700 text-[11px] px-2 py-0.5 rounded">Kulkas</span>
+                            <span class="bg-purple-50 text-purple-700 text-[11px] px-2 py-0.5 rounded">Kamar mandi dalam</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="text-sky-600 font-semibold text-sm">Rp 2.000.000 <span class="text-gray-500 text-xs font-normal">/ bulan</span></div>
+                            <button class="border border-gray-200 hover:border-sky-500 text-gray-700 hover:text-sky-600 text-xs font-medium px-3.5 py-2 rounded-xl transition">Lihat Detail</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Section Pesan Kamar -->
+        <section class="mt-16 bg-white border border-gray-100 rounded-3xl p-8 md:p-10 shadow-sm">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Pesan Kamar</h2>
+            
+            <form class="space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                    <!-- Nama Lengkap -->
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Nama lengkap</label>
+                        <input type="text" class="w-full bg-white border border-gray-200 text-gray-800 text-sm rounded-xl px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-sky-500" placeholder="">
+                    </div>
+                    <!-- Nomor HP -->
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Nomor HP</label>
+                        <input type="text" class="w-full bg-white border border-gray-200 text-gray-800 text-sm rounded-xl px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-sky-500" placeholder="">
+                    </div>
+                    <!-- Email -->
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                        <input type="email" class="w-full bg-white border border-gray-200 text-gray-800 text-sm rounded-xl px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-sky-500" placeholder="">
+                    </div>
+                    <!-- Kamar yang dipilih -->
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Kamar yang dipilih</label>
+                        <select class="w-full bg-white border border-gray-200 text-gray-500 text-sm rounded-xl px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-sky-500">
+                            <option>Pilih kamar</option>
+                            <option>Kamar A01</option>
+                            <option>Kamar A02</option>
+                            <option>Kamar A03</option>
+                            <option>Kamar A04</option>
+                            <option>Kamar A05</option>
+                            <option>Kamar A06</option>
+                            <option>Kamar B01</option>
+                            <option>Kamar B02</option>
+                            <option>Kamar B03</option>
+                            <option>Kamar B04</option>
+                            <option>Kamar B05</option>
+                            <option>Kamar B06</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                    <!-- Tanggal rencana masuk -->
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Tanggal rencana masuk</label>
+                        <input type="date" class="w-full bg-white border border-gray-200 text-gray-500 text-sm rounded-xl px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-sky-500">
+                    </div>
+                </div>
+
+                <!-- Catatan -->
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Catatan (opsional)</label>
+                    <textarea rows="4" class="w-full bg-white border border-gray-200 text-gray-800 text-sm rounded-xl px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-sky-500"></textarea>
+                </div>
+
+                <!-- Tombol Kirim Pemesanan -->
+                <div>
+                    <button type="submit" class="w-full bg-sky-500 hover:bg-sky-600 text-white font-medium text-sm py-3.5 rounded-xl shadow transition">
+                        Kirim Pemesanan
+                    </button>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-6 text-xs text-gray-500 border-t border-gray-100">
+        &copy; 2026 Ngekos Yuk. Ini adalah tampilan simulasi, data tidak disimpan di server.
+    </footer>
+
+</body>
+</html>

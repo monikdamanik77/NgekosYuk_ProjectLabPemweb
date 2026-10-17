@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dasbor Pemilik - Ngekos Yuk</title>
+    <!-- Menggunakan Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Menggunakan FontAwesome untuk ikon menu sidebar -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-[#F4F7FB] text-gray-800 font-sans min-h-screen flex flex-col justify-between">
+
+    <!-- Navbar Atas -->
+    <header class="bg-white border-b border-gray-100 shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="text-xl font-extrabold text-sky-600 tracking-tight">Ngekos Yuk</div>
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-600">
+                <a href="index.html" class="hover:text-sky-600 transition">Beranda</a>
+                <a href="index.html#cari-kamar" class="hover:text-sky-600 transition">Cari Kamar</a>
+                <a href="pemilik.html" class="text-sky-600 font-semibold transition">Dasbor Pemilik</a>
+                <a href="login.html" class="border border-gray-200 text-gray-700 px-5 py-2 rounded-xl hover:bg-gray-50 transition">Keluar</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="max-w-7xl mx-auto px-6 py-10 w-full flex-grow">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 items-start">
+            
+            <!-- Sidebar Menu -->
+            <div class="bg-white border border-gray-100 rounded-3xl p-6 shadow-sm space-y-2">
+                <div class="mb-6 px-3">
+                    <h2 class="text-xl font-bold text-gray-900">Pemilik Kos</h2>
+                </div>
+                
+                <a href="#" class="flex items-center space-x-3 px-4 py-3 rounded-2xl bg-sky-100/70 text-sky-800 font-medium text-sm transition">
+                    <i class="fa-solid fa-table-cells-large w-5"></i>
+                    <span>Dasbor</span>
+                </a>
+                <a href="#" class="flex items-center space-x-3 px-4 py-3 rounded-2xl text-gray-600 hover:bg-gray-50 hover:text-gray-900 font-medium text-sm transition">
+                    <i class="fa-solid fa-house w-5 text-gray-400"></i>
+                    <span>Kelola Kamar</span>
+                </a>
+                <a href="#" class="flex items-center space-x-3 px-4 py-3 rounded-2xl text-gray-600 hover:bg-gray-50 hover:text-gray-900 font-medium text-sm transition">
+                    <i class="fa-solid fa-calendar-days w-5 text-gray-400"></i>
+                    <span>Pesanan</span>
+                </a>
+                <a href="#" class="flex items-center space-x-3 px-4 py-3 rounded-2xl text-gray-600 hover:bg-gray-50 hover:text-gray-900 font-medium text-sm transition">
+                    <i class="fa-solid fa-users w-5 text-gray-400"></i>
+                    <span>Data Penghuni</span>
+                </a>
+                <a href="#" class="flex items-center space-x-3 px-4 py-3 rounded-2xl text-gray-600 hover:bg-gray-50 hover:text-gray-900 font-medium text-sm transition">
+                    <i class="fa-solid fa-file-invoice-dollar w-5 text-gray-400"></i>
+                    <span>Tagihan</span>
+                </a>
+                <a href="#" class="flex items-center space-x-3 px-4 py-3 rounded-2xl text-gray-600 hover:bg-gray-50 hover:text-gray-900 font-medium text-sm transition">
+                    <i class="fa-solid fa-circle-check w-5 text-gray-400"></i>
+                    <span>Verifikasi Pembayaran</span>
+                </a>
+                <a href="#" class="flex items-center space-x-3 px-4 py-3 rounded-2xl text-gray-600 hover:bg-gray-50 hover:text-gray-900 font-medium text-sm transition">
+                    <i class="fa-solid fa-comment-dots w-5 text-gray-400"></i>
+                    <span>Keluhan</span>
+                </a>
+            </div>
+
+            <!-- Content Cards Grid -->
+            <div class="md:col-span-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Card 1: Total Kamar -->
+                <div class="bg-sky-50/80 border border-sky-100/60 rounded-3xl p-6 shadow-sm flex flex-col justify-between h-36">
+                    <div class="text-3xl font-extrabold text-sky-800">12</div>
+                    <div class="text-sm font-medium text-gray-600">Total kamar</div>
+                </div>
+
+                <!-- Card 2: Kamar Tersedia -->
+                <div class="bg-emerald-50/80 border border-emerald-100/60 rounded-3xl p-6 shadow-sm flex flex-col justify-between h-36">
+                    <div class="text-3xl font-extrabold text-emerald-800">8</div>
+                    <div class="text-sm font-medium text-gray-600">Kamar tersedia</div>
+                </div>
+
+                <!-- Card 3: Kamar Terisi -->
+                <div class="bg-purple-50/80 border border-purple-100/60 rounded-3xl p-6 shadow-sm flex flex-col justify-between h-36">
+                    <div class="text-3xl font-extrabold text-purple-800">2</div>
+                    <div class="text-sm font-medium text-gray-600">Kamar terisi</div>
+                </div>
+
+                <!-- Card 4: Total Penghuni -->
+                <div class="bg-white border border-gray-100 rounded-3xl p-6 shadow-sm flex flex-col justify-between h-36">
+                    <div class="text-3xl font-extrabold text-sky-700">2</div>
+                    <div class="text-sm font-medium text-gray-600">Total penghuni</div>
+                </div>
+
+                <!-- Card 5: Pesanan Menunggu -->
+                <div class="bg-amber-50/80 border border-amber-100/60 rounded-3xl p-6 shadow-sm flex flex-col justify-between h-36">
+                    <div class="text-3xl font-extrabold text-amber-800">2</div>
+                    <div class="text-sm font-medium text-gray-600">Pesanan menunggu</div>
+                </div>
+
+                <!-- Card 6: Tagihan Belum Dibayar -->
+                <div class="bg-rose-50/80 border border-rose-100/60 rounded-3xl p-6 shadow-sm flex flex-col justify-between h-36">
+                    <div class="text-3xl font-extrabold text-rose-800">1</div>
+                    <div class="text-sm font-medium text-gray-600">Tagihan belum dibayar</div>
+                </div>
+
+                <!-- Card 7: Pembayaran Menunggu Verifikasi -->
+                <div class="bg-indigo-50/80 border border-indigo-100/60 rounded-3xl p-6 shadow-sm flex flex-col justify-between h-36">
+                    <div class="text-3xl font-extrabold text-indigo-800">1</div>
+                    <div class="text-sm font-medium text-gray-600">Pembayaran menunggu verifikasi</div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-6 text-xs text-gray-500 border-t border-gray-100 bg-white">
+        &copy; 2026 Ngekos Yuk. Ini adalah tampilan simulasi, data tidak disimpan di server.
+    </footer>
+
+</body>
+</html>
