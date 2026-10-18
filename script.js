@@ -1,9 +1,3 @@
-// =====================================================
-// script.js - Ngekos Yuk (versi HTML)
-// Semua aksi hanya simulasi dan tidak dikirim ke server.
-// =====================================================
-
-// ---------- Alat bantu ----------
 const kelasStatus = {
   'Tersedia': 'badge-success', 'Terisi': 'badge-danger', 'Dalam Perbaikan': 'badge-warning',
   'Menunggu': 'badge-warning', 'Diterima': 'badge-success', 'Ditolak': 'badge-danger',
@@ -31,7 +25,6 @@ function notify(pesan) {
   kotak.timer = setTimeout(() => { kotak.hidden = true; }, 3500);
 }
 
-// ---------- Tabel ----------
 function tambahBaris(idTabel, sel, id) {
   const baris = document.getElementById(idTabel).tBodies[0].insertRow();
   baris.innerHTML = sel.map((isi) => `<td>${isi}</td>`).join('');
@@ -48,7 +41,6 @@ function cariBaris(idTabel, kolom, nilai) {
   const baris = [...document.getElementById(idTabel).tBodies[0].rows];
   return baris.find((b) => b.cells[kolom] && b.cells[kolom].textContent.trim() === nilai);
 }
-// Kartu statistik: data-hitung="#tabel|Teks Status" (tanpa status = jumlah baris data)
 function hitungStatistik() {
   document.querySelectorAll('[data-hitung]').forEach((kartu) => {
     const [selektor, status] = kartu.dataset.hitung.split('|');
@@ -59,7 +51,6 @@ function hitungStatistik() {
   });
 }
 
-// ---------- Pesanan dari beranda (disimpan di browser ini saja) ----------
 function bacaPesanan() {
   try { return JSON.parse(localStorage.getItem('pesananBaru')) || []; } catch (e) { return []; }
 }
@@ -74,7 +65,6 @@ if (document.getElementById('tabel-pesanan')) {
   });
 }
 
-// ---------- Formulir ----------
 const aksiForm = {
   pesan(data) {
     const daftar = bacaPesanan();
@@ -115,7 +105,6 @@ document.querySelectorAll('form[data-simulasi]').forEach((form) => {
   });
 });
 
-// Pesan validasi dalam bahasa Indonesia
 document.addEventListener('invalid', (e) => {
   const el = e.target;
   if (el.validity.valueMissing) el.setCustomValidity('Kolom ini wajib diisi.');
@@ -126,7 +115,6 @@ document.addEventListener('invalid', (e) => {
 document.addEventListener('input', (e) => { if (e.target.setCustomValidity) e.target.setCustomValidity(''); });
 document.querySelectorAll('input[data-min-hari-ini]').forEach((i) => { i.min = hariIni; });
 
-// ---------- Tombol Terima / Tolak (dasbor pemilik) ----------
 function jadikanPenghuni(baris) {
   const [hp, email] = baris.cells[1].textContent.split(' / ');
   const kamar = baris.cells[2].textContent;
@@ -163,7 +151,6 @@ document.addEventListener('change', (e) => {
   if (e.target.matches('select[data-pesan]')) notify(e.target.dataset.pesan);
 });
 
-// ---------- Beranda: saring kamar dan jendela detail ----------
 const saring = document.getElementById('filter-status');
 if (saring) {
   saring.addEventListener('change', () => {
@@ -188,7 +175,6 @@ if (jendela) {
   });
 }
 
-// ---------- Dasbor: tandai menu sesuai bagian yang sedang dilihat ----------
 const menu = document.querySelectorAll('.sidebar a');
 if (menu.length && 'IntersectionObserver' in window) {
   const pengamat = new IntersectionObserver((daftar) => {
