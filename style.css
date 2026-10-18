@@ -72,7 +72,6 @@ th { background: var(--color-background); white-space: nowrap; }
 footer { text-align: center; color: var(--color-muted); font-size: .85rem; padding: 2rem 1rem; }
 @media (max-width: 760px) { .dash { grid-template-columns: 1fr; } .sidebar { position: static; } }
 
-/* ---------- Gerak halus, jendela detail, dan menu aktif ---------- */
 .hero > * { animation: naik .6s ease-out both; }
 @keyframes naik {
   from { opacity: 0; transform: translateY(12px); }
