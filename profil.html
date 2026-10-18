@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil - Ngekos Yuk</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { theme: { extend: { colors: { sky: { 50: '#F0F7FC', 100: '#DCEBF7', 200: '#BEDBF0', 500: '#4D96C7', 600: '#3F82B1', 700: '#336B93', 800: '#245780' } } } } }</script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#F4F7FB] text-gray-800 font-sans min-h-screen flex flex-col justify-between">
+    <header class="bg-white border-b border-gray-100 shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex flex-wrap items-center justify-between gap-3">
+            <a href="index.html" class="text-xl font-extrabold text-sky-600 tracking-tight">Ngekos Yuk</a>
+            <nav class="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm font-medium text-gray-600">
+                <a href="index.html" class="hover:text-sky-600 transition">Beranda</a>
+                <a href="index.html#cari-kamar" class="hover:text-sky-600 transition">Cari Kamar</a>
+                <a href="penghuni.html" class="text-sky-600 font-semibold transition">Dasbor Saya</a>
+                <a href="login.html" class="border border-gray-200 text-gray-700 px-5 py-2 rounded-xl hover:bg-gray-50 transition">Keluar</a>
+            </nav>
+        </div>
+    </header>
+    <main class="max-w-7xl mx-auto px-6 py-10 w-full flex-grow">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 items-start">
+            <aside class="bg-white border border-gray-100 rounded-3xl p-6 shadow-sm space-y-2">
+                <div class="mb-6 px-3"><h2 class="text-xl font-bold text-gray-900">Penghuni</h2></div>
+                <a href="penghuni.html" class="flex items-center space-x-3 px-4 py-3 rounded-2xl font-medium text-sm transition text-gray-600 hover:bg-gray-50 hover:text-gray-900"><i class="fa-solid fa-table-cells-large w-5 text-gray-400"></i><span>Dasbor</span></a>
+                <a href="kamar-saya.html" class="flex items-center space-x-3 px-4 py-3 rounded-2xl font-medium text-sm transition text-gray-600 hover:bg-gray-50 hover:text-gray-900"><i class="fa-solid fa-house w-5 text-gray-400"></i><span>Kamar Saya</span></a>
+                <a href="tagihan-saya.html" class="flex items-center space-x-3 px-4 py-3 rounded-2xl font-medium text-sm transition text-gray-600 hover:bg-gray-50 hover:text-gray-900"><i class="fa-solid fa-file-invoice-dollar w-5 text-gray-400"></i><span>Tagihan</span></a>
+                <a href="riwayat-pembayaran.html" class="flex items-center space-x-3 px-4 py-3 rounded-2xl font-medium text-sm transition text-gray-600 hover:bg-gray-50 hover:text-gray-900"><i class="fa-solid fa-clock-rotate-left w-5 text-gray-400"></i><span>Riwayat Pembayaran</span></a>
+                <a href="keluhan-saya.html" class="flex items-center space-x-3 px-4 py-3 rounded-2xl font-medium text-sm transition text-gray-600 hover:bg-gray-50 hover:text-gray-900"><i class="fa-solid fa-comment-dots w-5 text-gray-400"></i><span>Keluhan</span></a>
+                <a href="profil.html" aria-current="page" class="flex items-center space-x-3 px-4 py-3 rounded-2xl font-medium text-sm transition bg-sky-100/70 text-sky-800"><i class="fa-solid fa-user w-5"></i><span>Profil</span></a>
+            </aside>
+            <div class="md:col-span-3 space-y-8">
+<div class="bg-white border border-gray-100 rounded-3xl p-8 shadow-sm">
+<h2 class="text-2xl font-bold text-gray-900 mb-6">Profil</h2>
+<form class="space-y-6" data-aksi="profil" data-simulasi="Profil diperbarui (simulasi).">
+<div><label class="block text-sm font-medium text-gray-700 mb-2">Nama lengkap</label><input name="nama" type="text" class="w-full bg-white border border-gray-200 text-gray-800 text-sm rounded-xl px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-sky-500" required value="Budi Santoso"></div><div><label class="block text-sm font-medium text-gray-700 mb-2">Email</label><input value="budi@mail.com" class="w-full bg-white border border-gray-200 text-gray-800 text-sm rounded-xl px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-sky-500 bg-gray-50 text-gray-500" disabled></div><div><label class="block text-sm font-medium text-gray-700 mb-2">Nomor HP</label><input name="hp" type="text" class="w-full bg-white border border-gray-200 text-gray-800 text-sm rounded-xl px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-sky-500" required value="081200000002" pattern="[0-9]{9,15}" inputmode="numeric" title="Nomor HP harus berupa angka (9 sampai 15 digit)."></div>
+<div><button type="submit" class="bg-sky-500 hover:bg-sky-600 text-white font-medium text-sm px-6 py-3 rounded-xl shadow transition">Simpan Profil</button></div>
+</form>
+</div>
+            </div>
+        </div>
+    </main>
+    <footer class="text-center py-6 text-xs text-gray-500 border-t border-gray-100 bg-white">&copy; 2026 Ngekos Yuk. Ini adalah tampilan simulasi, data hanya tersimpan di browser ini, bukan di server. <button type="button" data-reset class="underline hover:text-sky-600">Atur ulang data</button></footer>
+    <script src="script.js"></script>
+</body>
+</html>
