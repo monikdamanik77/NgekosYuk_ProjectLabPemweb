@@ -31,6 +31,7 @@
                 <a href="#tagihan" class="flex items-center space-x-3 px-4 py-3 rounded-2xl text-gray-600 hover:bg-gray-50 hover:text-gray-900 font-medium text-sm transition"><i class="fa-solid fa-file-invoice-dollar w-5"></i><span>Tagihan</span></a>
                 <a href="#riwayat" class="flex items-center space-x-3 px-4 py-3 rounded-2xl text-gray-600 hover:bg-gray-50 hover:text-gray-900 font-medium text-sm transition"><i class="fa-solid fa-clock-rotate-left w-5"></i><span>Riwayat Pembayaran</span></a>
                 <a href="#keluhan" class="flex items-center space-x-3 px-4 py-3 rounded-2xl text-gray-600 hover:bg-gray-50 hover:text-gray-900 font-medium text-sm transition"><i class="fa-solid fa-comment-dots w-5"></i><span>Keluhan</span></a>
+                <a href="#aturan" class="flex items-center space-x-3 px-4 py-3 rounded-2xl text-gray-600 hover:bg-gray-50 hover:text-gray-900 font-medium text-sm transition"><i class="fa-solid fa-scale-balanced w-5"></i><span>Aturan Kos</span></a>
                 <a href="#profil" class="flex items-center space-x-3 px-4 py-3 rounded-2xl text-gray-600 hover:bg-gray-50 hover:text-gray-900 font-medium text-sm transition"><i class="fa-solid fa-user w-5"></i><span>Profil</span></a>
             </aside>
             <div class="md:col-span-3 space-y-14">
@@ -52,11 +53,21 @@
 <div><dt class="text-gray-500">Harga sewa</dt><dd class="font-medium text-sky-700">Rp 1.000.000 / bulan</dd></div>
 <div><dt class="text-gray-500">Fasilitas</dt><dd class="font-medium">Kasur, Lemari, Kamar mandi dalam</dd></div>
 <div><dt class="text-gray-500">Mulai tinggal</dt><dd class="font-medium">10 Januari 2026</dd></div>
-</dl></div>
+</dl>
+<div class="mt-6 p-4 bg-sky-50 rounded-2xl">
+
+</div>
+</div>
 </section>
 <section id="tagihan" class="space-y-8">
 <div class="bg-white border border-sky-100 rounded-3xl p-8 shadow-sm">
 <h2 class="text-2xl font-bold text-gray-900 mb-6">Tagihan</h2>
+<div class="mb-6">
+<p class="text-sm text-gray-600 mb-2">Progres pembayaran tahun ini: 1 dari 2 bulan lunas</p>
+<div class="w-full bg-gray-200 rounded-full h-3">
+<div class="bg-sky-500 h-3 rounded-full" style="width: 50%"></div>
+</div>
+</div>
 <div class="overflow-x-auto"><table id="tabel-tagihan-saya" class="tabel" data-simpan="tagihan-saya"><thead><tr><th>Periode</th><th>Sewa</th><th>Listrik</th><th>Air</th><th>Total</th><th>Jatuh Tempo</th><th>Status</th></tr></thead><tbody>
 <tr><td>September 2026</td><td>Rp 1.000.000</td><td>Rp 60.000</td><td>Rp 30.000</td><td>Rp 1.090.000</td><td>10 September 2026</td><td><span class="badge badge-success">Lunas</span></td></tr>
 <tr><td>Oktober 2026</td><td>Rp 1.000.000</td><td>Rp 75.000</td><td>Rp 30.000</td><td>Rp 1.105.000</td><td>10 Oktober 2026</td><td><span class="badge badge-danger">Belum Dibayar</span></td></tr>
@@ -95,7 +106,18 @@
 <h2 class="text-2xl font-bold text-gray-900 mb-6">Keluhan Saya</h2>
 <div class="overflow-x-auto"><table id="tabel-keluhan-saya" class="tabel" data-simpan="keluhan-saya"><thead><tr><th>Judul</th><th>Deskripsi</th><th>Tanggal</th><th>Status</th></tr></thead><tbody>
 <tr><td>Lampu kamar mati</td><td>Lampu utama tidak menyala sejak kemarin.</td><td>9 Oktober 2026</td><td><span class="badge badge-info">Sedang Diproses</span></td></tr>
+<tr><td>AC tidak dingin</td><td>AC kamar tidak mengeluarkan udara dingin.</td><td>5 Oktober 2026</td><td><span class="inline-block px-3 py-1 text-xs font-medium rounded-full bg-green-100 text-green-700">Selesai</span></td></tr>
 </tbody></table></div>
+</div>
+</section>
+<section id="aturan" class="space-y-8">
+<div class="bg-white border border-sky-100 rounded-3xl p-8 shadow-sm">
+<h2 class="text-2xl font-bold text-gray-900 mb-6">Aturan Kos</h2>
+<ul class="list-disc pl-6 space-y-2 text-sm text-gray-700">
+<li>Jam tamu sampai pukul 22.00 WIB.</li>
+<li>Dilarang membawa hewan peliharaan.</li>
+<li>Pembayaran paling lambat tanggal 10 setiap bulan.</li>
+</ul>
 </div>
 </section>
 <section id="profil" class="space-y-8">
