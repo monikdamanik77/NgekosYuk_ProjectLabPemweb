@@ -92,22 +92,6 @@ dialog::backdrop { background: rgba(147, 187, 235, .5); }
 dialog .isi > div:first-child { border-radius: 0; }
 dialog .isi > div:last-child { padding-bottom: .5rem; }
 
-.facility-card {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  position: relative;
-}
-.facility-icon {
-  flex-shrink: 0;
-  position: static !important;
-  display: inline-block;
-}
-.fa-shield-halved, .fa-wifi, .fa-location-dot {
-  position: static !important;
-  display: inline-block;
-}
-
 .hero-teks { animation: naik .6s ease-out both; }
 @keyframes naik {
   from { opacity: 0; transform: translateY(12px); }
