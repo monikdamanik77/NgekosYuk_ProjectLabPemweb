@@ -13,28 +13,28 @@
 </head>
 <body class="bg-gradient-to-b from-sky-100 via-sky-50 to-blue-100 bg-fixed text-gray-800 font-sans">
 
-    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-sky-100">
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-sky-100 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between flex-nowrap">
+
             <a href="index.html" class="flex items-center gap-2 text-lg sm:text-xl font-extrabold text-[#14285A] whitespace-nowrap">
                 <i class="fa-solid fa-house-chimney text-sky-600 text-xl sm:text-2xl"></i>
                 <span>Ngekos Yuk</span>
             </a>
-            
-            <!-- Navbar diperbaiki dengan flex-nowrap dan items-center agar rapi sejajar tanpa turun baris -->
-            <nav class="flex items-center gap-1 sm:gap-2 text-xs sm:text-sm font-semibold text-gray-600 flex-nowrap">
-                <a href="index.html" class="flex items-center gap-1.5 px-2.5 py-2 text-sky-600 hover:text-sky-600 whitespace-nowrap">
+
+            <nav class="flex items-center gap-1 sm:gap-3 text-xs sm:text-sm font-semibold text-gray-600 flex-nowrap">
+                <a href="index.html" class="flex items-center gap-1.5 px-2.5 py-2 text-sky-600 hover:text-sky-600 whitespace-nowrap transition">
                     <i class="fa-solid fa-house"></i>
                     <span>Beranda</span>
                 </a>
-                <a href="#cari-kamar" class="flex items-center gap-1.5 px-2.5 py-2 hover:text-sky-600 whitespace-nowrap">
+                <a href="#cari-kamar" class="flex items-center gap-1.5 px-2.5 py-2 hover:text-sky-600 whitespace-nowrap transition">
                     <i class="fa-solid fa-magnifying-glass"></i>
                     <span>Cari Kamar</span>
                 </a>
-                <a href="#pesan-kamar" class="flex items-center gap-1.5 px-2.5 py-2 hover:text-sky-600 whitespace-nowrap">
+                <a href="#pesan-kamar" class="flex items-center gap-1.5 px-2.5 py-2 hover:text-sky-600 whitespace-nowrap transition">
                     <i class="fa-solid fa-calendar-days"></i>
                     <span>Pesan Kamar</span>
                 </a>
-                <a href="login.html" class="ml-1 sm:ml-2 flex items-center gap-1.5 rounded-full bg-sky-600 hover:bg-sky-700 text-white px-3 sm:px-5 py-2 sm:py-2.5 shadow-md shadow-sky-200 whitespace-nowrap">
+                <a href="login.html" class="ml-1 flex items-center gap-1.5 rounded-full bg-sky-600 hover:bg-sky-700 text-white px-4 sm:px-5 py-2 sm:py-2.5 shadow-md shadow-sky-200 whitespace-nowrap transition">
                     <i class="fa-regular fa-user"></i>
                     <span>Masuk</span>
                 </a>
@@ -67,6 +67,40 @@
             </div>
         </section>
 
+        <section class="mt-14 bg-white/90 border border-sky-100 rounded-3xl p-8 md:p-10 shadow-sm">
+            <h2 class="text-2xl font-bold text-[#14285A] mb-6">Fasilitas Bersama</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                <div class="flex items-center gap-3 p-3 rounded-xl bg-sky-50/50 border border-sky-100/60">
+                    <span class="grid h-10 w-10 place-items-center rounded-lg bg-sky-100 text-sky-600"><i class="fa-solid fa-video"></i></span>
+                    <span class="text-sm font-semibold text-[#14285A]">CCTV</span>
+                </div>
+                <div class="flex items-center gap-3 p-3 rounded-xl bg-sky-50/50 border border-sky-100/60">
+                    <span class="grid h-10 w-10 place-items-center rounded-lg bg-sky-100 text-sky-600"><i class="fa-solid fa-utensils"></i></span>
+                    <span class="text-sm font-semibold text-[#14285A]">Dapur</span>
+                </div>
+                <div class="flex items-center gap-3 p-3 rounded-xl bg-sky-50/50 border border-sky-100/60">
+                    <span class="grid h-10 w-10 place-items-center rounded-lg bg-sky-100 text-sky-600"><i class="fa-solid fa-shirt"></i></span>
+                    <span class="text-sm font-semibold text-[#14285A]">Mesin Cuci</span>
+                </div>
+                <div class="flex items-center gap-3 p-3 rounded-xl bg-sky-50/50 border border-sky-100/60">
+                    <span class="grid h-10 w-10 place-items-center rounded-lg bg-sky-100 text-sky-600"><i class="fa-solid fa-bottle-water"></i></span>
+                    <span class="text-sm font-semibold text-[#14285A]">Dispenser</span>
+                </div>
+                <div class="flex items-center gap-3 p-3 rounded-xl bg-sky-50/50 border border-sky-100/60">
+                    <span class="grid h-10 w-10 place-items-center rounded-lg bg-sky-100 text-sky-600"><i class="fa-solid fa-couch"></i></span>
+                    <span class="text-sm font-semibold text-[#14285A]">Ruang Tamu</span>
+                </div>
+                <div class="flex items-center gap-3 p-3 rounded-xl bg-sky-50/50 border border-sky-100/60">
+                    <span class="grid h-10 w-10 place-items-center rounded-lg bg-sky-100 text-sky-600"><i class="fa-solid fa-sun"></i></span>
+                    <span class="text-sm font-semibold text-[#14285A]">Ruang Jemur</span>
+                </div>
+                <div class="flex items-center gap-3 p-3 rounded-xl bg-sky-50/50 border border-sky-100/60">
+                    <span class="grid h-10 w-10 place-items-center rounded-lg bg-sky-100 text-sky-600"><i class="fa-solid fa-basket-shopping"></i></span>
+                    <span class="text-sm font-semibold text-[#14285A]">Laundry</span>
+                </div>
+            </div>
+        </section>
+
         <section id="cari-kamar" class="mt-14">
             <div class="flex flex-col md:flex-row md:items-center justify-between mb-8 gap-4">
                 <h2 class="text-2xl font-bold text-[#14285A]">Cari Kamar</h2>
@@ -81,6 +115,7 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6" id="grid-kamar">
+                
                 <div data-room data-status-kamar="Terisi" class="bg-white rounded-2xl overflow-hidden border border-sky-100 shadow-sm hover:shadow-md transition">
                     <div class="relative h-48 bg-gray-200">
                         <img src="images/room-a.jpeg" alt="Kamar A01" class="w-full h-full object-cover">
@@ -95,11 +130,9 @@
                             <span class="bg-sky-50 text-sky-700 text-[11px] px-2 py-0.5 rounded">Kasur</span>
                             <span class="bg-sky-50 text-sky-700 text-[11px] px-2 py-0.5 rounded">Lemari</span>
                             <span class="bg-sky-50 text-sky-700 text-[11px] px-2 py-0.5 rounded">Kamar mandi dalam</span>
+                            <span class="bg-amber-50 text-amber-700 text-[11px] px-2 py-0.5 rounded">Token Listrik dan Air bayar</span>
                         </div>
-                        <div class="flex items-center justify-between">
-                            <div class="text-sky-600 font-semibold text-sm">Rp 1.000.000 <span class="text-gray-500 text-xs font-normal">/ bulan</span></div>
-                            <button type="button" data-detail class="border border-gray-200 hover:border-sky-500 text-gray-700 hover:text-sky-600 text-xs font-medium px-3.5 py-2 rounded-xl transition">Lihat Detail</button>
-                        </div>
+                        <div class="text-sky-600 font-semibold text-sm">Rp 1.000.000 <span class="text-gray-500 text-xs font-normal">/ bulan</span></div>
                     </div>
                 </div>
 
@@ -117,11 +150,9 @@
                             <span class="bg-sky-50 text-sky-700 text-[11px] px-2 py-0.5 rounded">Kasur</span>
                             <span class="bg-sky-50 text-sky-700 text-[11px] px-2 py-0.5 rounded">Lemari</span>
                             <span class="bg-sky-50 text-sky-700 text-[11px] px-2 py-0.5 rounded">Kamar mandi dalam</span>
+                            <span class="bg-amber-50 text-amber-700 text-[11px] px-2 py-0.5 rounded">Token Listrik dan Air bayar</span>
                         </div>
-                        <div class="flex items-center justify-between">
-                            <div class="text-sky-600 font-semibold text-sm">Rp 1.000.000 <span class="text-gray-500 text-xs font-normal">/ bulan</span></div>
-                            <button type="button" data-detail class="border border-gray-200 hover:border-sky-500 text-gray-700 hover:text-sky-600 text-xs font-medium px-3.5 py-2 rounded-xl transition">Lihat Detail</button>
-                        </div>
+                        <div class="text-sky-600 font-semibold text-sm">Rp 1.000.000 <span class="text-gray-500 text-xs font-normal">/ bulan</span></div>
                     </div>
                 </div>
 
@@ -139,11 +170,9 @@
                             <span class="bg-sky-50 text-sky-700 text-[11px] px-2 py-0.5 rounded">Kasur</span>
                             <span class="bg-sky-50 text-sky-700 text-[11px] px-2 py-0.5 rounded">Lemari</span>
                             <span class="bg-sky-50 text-sky-700 text-[11px] px-2 py-0.5 rounded">Kamar mandi dalam</span>
+                            <span class="bg-amber-50 text-amber-700 text-[11px] px-2 py-0.5 rounded">Token Listrik dan Air bayar</span>
                         </div>
-                        <div class="flex items-center justify-between">
-                            <div class="text-sky-600 font-semibold text-sm">Rp 1.000.000 <span class="text-gray-500 text-xs font-normal">/ bulan</span></div>
-                            <button type="button" data-detail class="border border-gray-200 hover:border-sky-500 text-gray-700 hover:text-sky-600 text-xs font-medium px-3.5 py-2 rounded-xl transition">Lihat Detail</button>
-                        </div>
+                        <div class="text-sky-600 font-semibold text-sm">Rp 1.000.000 <span class="text-gray-500 text-xs font-normal">/ bulan</span></div>
                     </div>
                 </div>
 
@@ -161,11 +190,9 @@
                             <span class="bg-sky-50 text-sky-700 text-[11px] px-2 py-0.5 rounded">Kasur</span>
                             <span class="bg-sky-50 text-sky-700 text-[11px] px-2 py-0.5 rounded">Lemari</span>
                             <span class="bg-sky-50 text-sky-700 text-[11px] px-2 py-0.5 rounded">Kamar mandi dalam</span>
+                            <span class="bg-amber-50 text-amber-700 text-[11px] px-2 py-0.5 rounded">Token Listrik dan Air bayar</span>
                         </div>
-                        <div class="flex items-center justify-between">
-                            <div class="text-sky-600 font-semibold text-sm">Rp 1.000.000 <span class="text-gray-500 text-xs font-normal">/ bulan</span></div>
-                            <button type="button" data-detail class="border border-gray-200 hover:border-sky-500 text-gray-700 hover:text-sky-600 text-xs font-medium px-3.5 py-2 rounded-xl transition">Lihat Detail</button>
-                        </div>
+                        <div class="text-sky-600 font-semibold text-sm">Rp 1.000.000 <span class="text-gray-500 text-xs font-normal">/ bulan</span></div>
                     </div>
                 </div>
 
@@ -183,11 +210,9 @@
                             <span class="bg-sky-50 text-sky-700 text-[11px] px-2 py-0.5 rounded">Kasur</span>
                             <span class="bg-sky-50 text-sky-700 text-[11px] px-2 py-0.5 rounded">Lemari</span>
                             <span class="bg-sky-50 text-sky-700 text-[11px] px-2 py-0.5 rounded">Kamar mandi dalam</span>
+                            <span class="bg-amber-50 text-amber-700 text-[11px] px-2 py-0.5 rounded">Token Listrik dan Air bayar</span>
                         </div>
-                        <div class="flex items-center justify-between">
-                            <div class="text-sky-600 font-semibold text-sm">Rp 1.000.000 <span class="text-gray-500 text-xs font-normal">/ bulan</span></div>
-                            <button type="button" data-detail class="border border-gray-200 hover:border-sky-500 text-gray-700 hover:text-sky-600 text-xs font-medium px-3.5 py-2 rounded-xl transition">Lihat Detail</button>
-                        </div>
+                        <div class="text-sky-600 font-semibold text-sm">Rp 1.000.000 <span class="text-gray-500 text-xs font-normal">/ bulan</span></div>
                     </div>
                 </div>
 
@@ -205,11 +230,9 @@
                             <span class="bg-sky-50 text-sky-700 text-[11px] px-2 py-0.5 rounded">Kasur</span>
                             <span class="bg-sky-50 text-sky-700 text-[11px] px-2 py-0.5 rounded">Lemari</span>
                             <span class="bg-sky-50 text-sky-700 text-[11px] px-2 py-0.5 rounded">Kamar mandi dalam</span>
+                            <span class="bg-amber-50 text-amber-700 text-[11px] px-2 py-0.5 rounded">Token Listrik dan Air bayar</span>
                         </div>
-                        <div class="flex items-center justify-between">
-                            <div class="text-sky-600 font-semibold text-sm">Rp 1.000.000 <span class="text-gray-500 text-xs font-normal">/ bulan</span></div>
-                            <button type="button" data-detail class="border border-gray-200 hover:border-sky-500 text-gray-700 hover:text-sky-600 text-xs font-medium px-3.5 py-2 rounded-xl transition">Lihat Detail</button>
-                        </div>
+                        <div class="text-sky-600 font-semibold text-sm">Rp 1.000.000 <span class="text-gray-500 text-xs font-normal">/ bulan</span></div>
                     </div>
                 </div>
 
@@ -229,11 +252,9 @@
                             <span class="bg-sky-50 text-sky-700 text-[11px] px-2 py-0.5 rounded">Meja belajar</span>
                             <span class="bg-sky-50 text-sky-700 text-[11px] px-2 py-0.5 rounded">Kulkas</span>
                             <span class="bg-sky-50 text-sky-700 text-[11px] px-2 py-0.5 rounded">Kamar mandi dalam</span>
+                            <span class="bg-amber-50 text-amber-700 text-[11px] px-2 py-0.5 rounded">Token Listrik dan Air bayar</span>
                         </div>
-                        <div class="flex items-center justify-between">
-                            <div class="text-sky-600 font-semibold text-sm">Rp 2.000.000 <span class="text-gray-500 text-xs font-normal">/ bulan</span></div>
-                            <button type="button" data-detail class="border border-gray-200 hover:border-sky-500 text-gray-700 hover:text-sky-600 text-xs font-medium px-3.5 py-2 rounded-xl transition">Lihat Detail</button>
-                        </div>
+                        <div class="text-sky-600 font-semibold text-sm">Rp 2.000.000 <span class="text-gray-500 text-xs font-normal">/ bulan</span></div>
                     </div>
                 </div>
 
@@ -253,14 +274,13 @@
                             <span class="bg-sky-50 text-sky-700 text-[11px] px-2 py-0.5 rounded">Meja belajar</span>
                             <span class="bg-sky-50 text-sky-700 text-[11px] px-2 py-0.5 rounded">Kulkas</span>
                             <span class="bg-sky-50 text-sky-700 text-[11px] px-2 py-0.5 rounded">Kamar mandi dalam</span>
+                            <span class="bg-amber-50 text-amber-700 text-[11px] px-2 py-0.5 rounded">Token Listrik dan Air bayar</span>
                         </div>
-                        <div class="flex items-center justify-between">
-                            <div class="text-sky-600 font-semibold text-sm">Rp 2.000.000 <span class="text-gray-500 text-xs font-normal">/ bulan</span></div>
-                            <button type="button" data-detail class="border border-gray-200 hover:border-sky-500 text-gray-700 hover:text-sky-600 text-xs font-medium px-3.5 py-2 rounded-xl transition">Lihat Detail</button>
-                        </div>
+                        <div class="text-sky-600 font-semibold text-sm">Rp 2.000.000 <span class="text-gray-500 text-xs font-normal">/ bulan</span></div>
                     </div>
                 </div>
 
+               
                 <div data-room data-status-kamar="Dalam Perbaikan" class="bg-white rounded-2xl overflow-hidden border border-sky-100 shadow-sm hover:shadow-md transition">
                     <div class="relative h-48 bg-gray-200">
                         <img src="images/room-b.jpeg" alt="Kamar B03" class="w-full h-full object-cover">
@@ -277,14 +297,13 @@
                             <span class="bg-sky-50 text-sky-700 text-[11px] px-2 py-0.5 rounded">Meja belajar</span>
                             <span class="bg-sky-50 text-sky-700 text-[11px] px-2 py-0.5 rounded">Kulkas</span>
                             <span class="bg-sky-50 text-sky-700 text-[11px] px-2 py-0.5 rounded">Kamar mandi dalam</span>
+                            <span class="bg-amber-50 text-amber-700 text-[11px] px-2 py-0.5 rounded">Token Listrik dan Air bayar</span>
                         </div>
-                        <div class="flex items-center justify-between">
-                            <div class="text-sky-600 font-semibold text-sm">Rp 2.000.000 <span class="text-gray-500 text-xs font-normal">/ bulan</span></div>
-                            <button type="button" data-detail class="border border-gray-200 hover:border-sky-500 text-gray-700 hover:text-sky-600 text-xs font-medium px-3.5 py-2 rounded-xl transition">Lihat Detail</button>
-                        </div>
+                        <div class="text-sky-600 font-semibold text-sm">Rp 2.000.000 <span class="text-gray-500 text-xs font-normal">/ bulan</span></div>
                     </div>
                 </div>
 
+                
                 <div data-room data-status-kamar="Tersedia" class="bg-white rounded-2xl overflow-hidden border border-sky-100 shadow-sm hover:shadow-md transition">
                     <div class="relative h-48 bg-gray-200">
                         <img src="images/room-b.jpeg" alt="Kamar B04" class="w-full h-full object-cover">
@@ -301,14 +320,13 @@
                             <span class="bg-sky-50 text-sky-700 text-[11px] px-2 py-0.5 rounded">Meja belajar</span>
                             <span class="bg-sky-50 text-sky-700 text-[11px] px-2 py-0.5 rounded">Kulkas</span>
                             <span class="bg-sky-50 text-sky-700 text-[11px] px-2 py-0.5 rounded">Kamar mandi dalam</span>
+                            <span class="bg-amber-50 text-amber-700 text-[11px] px-2 py-0.5 rounded">Token Listrik dan Air bayar</span>
                         </div>
-                        <div class="flex items-center justify-between">
-                            <div class="text-sky-600 font-semibold text-sm">Rp 2.000.000 <span class="text-gray-500 text-xs font-normal">/ bulan</span></div>
-                            <button type="button" data-detail class="border border-gray-200 hover:border-sky-500 text-gray-700 hover:text-sky-600 text-xs font-medium px-3.5 py-2 rounded-xl transition">Lihat Detail</button>
-                        </div>
+                        <div class="text-sky-600 font-semibold text-sm">Rp 2.000.000 <span class="text-gray-500 text-xs font-normal">/ bulan</span></div>
                     </div>
                 </div>
 
+               
                 <div data-room data-status-kamar="Tersedia" class="bg-white rounded-2xl overflow-hidden border border-sky-100 shadow-sm hover:shadow-md transition">
                     <div class="relative h-48 bg-gray-200">
                         <img src="images/room-b.jpeg" alt="Kamar B05" class="w-full h-full object-cover">
@@ -325,14 +343,13 @@
                             <span class="bg-sky-50 text-sky-700 text-[11px] px-2 py-0.5 rounded">Meja belajar</span>
                             <span class="bg-sky-50 text-sky-700 text-[11px] px-2 py-0.5 rounded">Kulkas</span>
                             <span class="bg-sky-50 text-sky-700 text-[11px] px-2 py-0.5 rounded">Kamar mandi dalam</span>
+                            <span class="bg-amber-50 text-amber-700 text-[11px] px-2 py-0.5 rounded">Token Listrik dan Air bayar</span>
                         </div>
-                        <div class="flex items-center justify-between">
-                            <div class="text-sky-600 font-semibold text-sm">Rp 2.000.000 <span class="text-gray-500 text-xs font-normal">/ bulan</span></div>
-                            <button type="button" data-detail class="border border-gray-200 hover:border-sky-500 text-gray-700 hover:text-sky-600 text-xs font-medium px-3.5 py-2 rounded-xl transition">Lihat Detail</button>
-                        </div>
+                        <div class="text-sky-600 font-semibold text-sm">Rp 2.000.000 <span class="text-gray-500 text-xs font-normal">/ bulan</span></div>
                     </div>
                 </div>
 
+               
                 <div data-room data-status-kamar="Tersedia" class="bg-white rounded-2xl overflow-hidden border border-sky-100 shadow-sm hover:shadow-md transition">
                     <div class="relative h-48 bg-gray-200">
                         <img src="images/room-b.jpeg" alt="Kamar B06" class="w-full h-full object-cover">
@@ -349,17 +366,16 @@
                             <span class="bg-sky-50 text-sky-700 text-[11px] px-2 py-0.5 rounded">Meja belajar</span>
                             <span class="bg-sky-50 text-sky-700 text-[11px] px-2 py-0.5 rounded">Kulkas</span>
                             <span class="bg-sky-50 text-sky-700 text-[11px] px-2 py-0.5 rounded">Kamar mandi dalam</span>
+                            <span class="bg-amber-50 text-amber-700 text-[11px] px-2 py-0.5 rounded">Token Listrik dan Air bayar</span>
                         </div>
-                        <div class="flex items-center justify-between">
-                            <div class="text-sky-600 font-semibold text-sm">Rp 2.000.000 <span class="text-gray-500 text-xs font-normal">/ bulan</span></div>
-                            <button type="button" data-detail class="border border-gray-200 hover:border-sky-500 text-gray-700 hover:text-sky-600 text-xs font-medium px-3.5 py-2 rounded-xl transition">Lihat Detail</button>
-                        </div>
+                        <div class="text-sky-600 font-semibold text-sm">Rp 2.000.000 <span class="text-gray-500 text-xs font-normal">/ bulan</span></div>
                     </div>
                 </div>
 
             </div>
         </section>
 
+        
         <section id="pesan-kamar" class="mt-16 bg-white/90 border border-sky-100 rounded-3xl p-8 md:p-10 shadow-sm">
             <h2 class="text-2xl font-bold text-[#14285A] mb-6">Pesan Kamar</h2>
             
@@ -415,7 +431,7 @@
 
     </main>
 
-    <dialog id="detail" class="rounded-3xl p-0 w-[92%] max-w-md">
+    <dialog id="detail" class="rounded-3xl p-0 w-[92%] max-w-md hidden">
         <div class="isi"></div>
         <form method="dialog" class="px-5 pb-5"><button class="btn-sm btn-sm-ghost">Tutup</button></form>
     </dialog>
