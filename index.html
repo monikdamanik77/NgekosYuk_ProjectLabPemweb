@@ -14,15 +14,30 @@
 <body class="bg-gradient-to-b from-sky-100 via-sky-50 to-blue-100 bg-fixed text-gray-800 font-sans">
 
     <header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-sky-100">
-        <div class="max-w-7xl mx-auto px-6 py-3 flex flex-wrap items-center justify-between gap-3">
-            <a href="index.html" class="flex items-center gap-2 text-xl font-extrabold text-[#14285A]"><i class="fa-solid fa-house-chimney text-sky-600 text-2xl"></i>Ngekos Yuk</a>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between flex-nowrap">
+            <a href="index.html" class="flex items-center gap-2 text-lg sm:text-xl font-extrabold text-[#14285A] whitespace-nowrap">
+                <i class="fa-solid fa-house-chimney text-sky-600 text-xl sm:text-2xl"></i>
+                <span>Ngekos Yuk</span>
+            </a>
             
-            <!-- Navbar diperbarui dengan flex items-center agar ikon & teks sejajar -->
-            <nav class="flex flex-wrap items-center gap-2 text-sm font-semibold text-gray-600">
-                <a href="index.html" class="flex items-center gap-2 px-3 py-2 text-sky-600 hover:text-sky-600"><i class="fa-solid fa-house"></i><span>Beranda</span></a>
-                <a href="#cari-kamar" class="flex items-center gap-2 px-3 py-2 hover:text-sky-600"><i class="fa-solid fa-magnifying-glass"></i><span>Cari Kamar</span></a>
-                <a href="#pesan-kamar" class="flex items-center gap-2 px-3 py-2 hover:text-sky-600"><i class="fa-solid fa-calendar-days"></i><span>Pesan Kamar</span></a>
-                <a href="login.html" class="ml-2 flex items-center gap-2 rounded-full bg-sky-600 hover:bg-sky-700 text-white px-5 py-2.5 shadow-md shadow-sky-200"><i class="fa-regular fa-user"></i><span>Masuk</span></a>
+            <!-- Navbar diperbaiki dengan flex-nowrap dan items-center agar rapi sejajar tanpa turun baris -->
+            <nav class="flex items-center gap-1 sm:gap-2 text-xs sm:text-sm font-semibold text-gray-600 flex-nowrap">
+                <a href="index.html" class="flex items-center gap-1.5 px-2.5 py-2 text-sky-600 hover:text-sky-600 whitespace-nowrap">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Beranda</span>
+                </a>
+                <a href="#cari-kamar" class="flex items-center gap-1.5 px-2.5 py-2 hover:text-sky-600 whitespace-nowrap">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <span>Cari Kamar</span>
+                </a>
+                <a href="#pesan-kamar" class="flex items-center gap-1.5 px-2.5 py-2 hover:text-sky-600 whitespace-nowrap">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <span>Pesan Kamar</span>
+                </a>
+                <a href="login.html" class="ml-1 sm:ml-2 flex items-center gap-1.5 rounded-full bg-sky-600 hover:bg-sky-700 text-white px-3 sm:px-5 py-2 sm:py-2.5 shadow-md shadow-sky-200 whitespace-nowrap">
+                    <i class="fa-regular fa-user"></i>
+                    <span>Masuk</span>
+                </a>
             </nav>
         </div>
     </header>
