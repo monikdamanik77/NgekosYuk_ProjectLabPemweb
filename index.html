@@ -14,27 +14,29 @@
 <body class="bg-gradient-to-b from-sky-100 via-sky-50 to-blue-100 bg-fixed text-gray-800 font-sans">
 
     <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-sky-100 shadow-sm">
-        <div class="max-w-7xl mx-auto px-3 sm:px-6 py-3 flex items-center justify-between gap-2 flex-nowrap overflow-x-auto">
-            <a href="index.html" class="flex items-center gap-1.5 sm:gap-2 text-base sm:text-xl font-extrabold text-[#14285A] whitespace-nowrap">
-                <i class="fa-solid fa-house-chimney text-sky-600 text-lg sm:text-2xl"></i>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between flex-nowrap">
+            <a href="index.html" class="flex items-center gap-2 text-lg sm:text-xl font-extrabold text-[#14285A] whitespace-nowrap">
+                <i class="fa-solid fa-house-chimney text-sky-600 text-xl sm:text-2xl"></i>
                 <span>Ngekos Yuk</span>
             </a>
+
+            <!-- Menggunakan title agar saat kursor diarahkan muncul keterangan, dan menyembunyikan teks di layar sempit/inspect -->
             <nav class="flex items-center gap-1 sm:gap-3 text-xs sm:text-sm font-semibold text-gray-600 flex-nowrap">
-                <a href="index.html" class="flex items-center gap-1 px-2 py-1.5 sm:px-2.5 sm:py-2 text-sky-600 hover:text-sky-600 whitespace-nowrap transition">
-                    <i class="fa-solid fa-house"></i>
-                    <span>Beranda</span>
+                <a href="index.html" title="Beranda" class="flex items-center gap-1.5 px-2.5 py-2 text-sky-600 hover:text-sky-600 whitespace-nowrap transition">
+                    <i class="fa-solid fa-house text-base"></i>
+                    <span class="hidden md:inline">Beranda</span>
                 </a>
-                <a href="#cari-kamar" class="flex items-center gap-1 px-2 py-1.5 sm:px-2.5 sm:py-2 hover:text-sky-600 whitespace-nowrap transition">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <span>Cari Kamar</span>
+                <a href="#cari-kamar" title="Cari Kamar" class="flex items-center gap-1.5 px-2.5 py-2 hover:text-sky-600 whitespace-nowrap transition">
+                    <i class="fa-solid fa-magnifying-glass text-base"></i>
+                    <span class="hidden md:inline">Cari Kamar</span>
                 </a>
-                <a href="#pesan-kamar" class="flex items-center gap-1 px-2 py-1.5 sm:px-2.5 sm:py-2 hover:text-sky-600 whitespace-nowrap transition">
-                    <i class="fa-solid fa-calendar-days"></i>
-                    <span>Pesan Kamar</span>
+                <a href="#pesan-kamar" title="Pesan Kamar" class="flex items-center gap-1.5 px-2.5 py-2 hover:text-sky-600 whitespace-nowrap transition">
+                    <i class="fa-solid fa-calendar-days text-base"></i>
+                    <span class="hidden md:inline">Pesan Kamar</span>
                 </a>
-                <a href="login.html" class="ml-1 flex items-center gap-1 rounded-full bg-sky-600 hover:bg-sky-700 text-white px-3 sm:px-5 py-1.5 sm:py-2.5 shadow-md shadow-sky-200 whitespace-nowrap transition">
-                    <i class="fa-regular fa-user"></i>
-                    <span>Masuk</span>
+                <a href="login.html" title="Masuk" class="ml-1 flex items-center gap-1.5 rounded-full bg-sky-600 hover:bg-sky-700 text-white px-3 sm:px-5 py-2 sm:py-2.5 shadow-md shadow-sky-200 whitespace-nowrap transition">
+                    <i class="fa-regular fa-user text-base"></i>
+                    <span class="hidden sm:inline">Masuk</span>
                 </a>
             </nav>
         </div>
